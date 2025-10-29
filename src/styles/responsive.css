@@ -1,0 +1,313 @@
+/* ========================================
+   COMPREHENSIVE RESPONSIVE STYLES
+   Mobile-First Approach
+   ======================================== */
+
+/* ========================================
+   GLOBAL RESPONSIVE UTILITIES
+   ======================================== */
+
+/* Container adjustments */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+/* ========================================
+   SECTION RESPONSIVE
+   ======================================== */
+
+.section {
+    padding: 60px 20px;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 40px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 30px 10px;
+    }
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.75rem;
+        margin-bottom: 1.25rem;
+    }
+}
+
+/* ========================================
+   TRIP & DESTINATION CARDS RESPONSIVE
+   ======================================== */
+
+.trips-grid,
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+@media (max-width: 1200px) {
+    .trips-grid,
+    .destinations-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .trips-grid,
+    .destinations-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.25rem;
+        margin: 1.5rem 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .trips-grid,
+    .destinations-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Trip/Destination Card */
+.trip-card,
+.destination-card {
+    max-width: 100%;
+}
+
+@media (max-width: 480px) {
+    .trip-card,
+    .destination-card {
+        font-size: 0.95rem;
+    }
+
+    .trip-title,
+    .destination-name {
+        font-size: 1.25rem !important;
+    }
+
+    .trip-description,
+    .destination-description {
+        font-size: 0.9rem !important;
+        line-height: 1.5 !important;
+    }
+}
+
+/* ========================================
+   FILTER BUTTONS RESPONSIVE
+   ======================================== */
+
+.trip-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .trip-filters {
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .trip-filters {
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .filter-btn {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* ========================================
+   BUTTONS RESPONSIVE
+   ======================================== */
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        padding: 0.65rem 1.25rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================================
+   TYPOGRAPHY RESPONSIVE
+   ======================================== */
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+}
+
+/* ========================================
+   PREVENT HORIZONTAL SCROLL
+   ======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+#root {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* ========================================
+   TOUCH INTERACTIONS FOR MOBILE
+   ======================================== */
+
+@media (max-width: 768px) {
+    /* Increase touch targets */
+    button,
+    a,
+    .clickable {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    /* Remove hover states on touch devices */
+    .trip-card:hover,
+    .destination-card:hover {
+        transform: none;
+    }
+
+    /* Better tap feedback */
+    button:active,
+    a:active,
+    .clickable:active {
+        opacity: 0.7;
+    }
+}
+
+/* ========================================
+   ENSURE IMAGES ARE RESPONSIVE
+   ======================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ========================================
+   GRID LAYOUTS MOBILE FALLBACK
+   ======================================== */
+
+@media (max-width: 600px) {
+    .grid,
+    [class*="grid"] {
+        grid-template-columns: 1fr !important;
+    }
+}
+

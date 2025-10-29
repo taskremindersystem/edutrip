@@ -125,15 +125,56 @@
 /* Responsive */
 @media (max-width: 768px) {
   .toast-container {
-    top: 70px;
+    top: 60px;
     right: 10px;
     left: 10px;
     max-width: none;
+    padding: 10px 0;
   }
 
   .toast {
     min-width: auto;
     width: 100%;
+    padding: 12px 14px;
+    gap: 10px;
+  }
+
+  .toast-icon {
+    font-size: 1.1rem;
+  }
+
+  .toast-message {
+    font-size: 0.9rem;
+  }
+
+  .toast-close {
+    font-size: 0.95rem;
   }
 }
 
+@media (max-width: 480px) {
+  .toast-container {
+    top: 60px;
+    right: 8px;
+    left: 8px;
+  }
+
+  .toast {
+    padding: 10px 12px;
+    gap: 8px;
+    font-size: 0.85rem;
+  }
+
+  .toast-icon {
+    font-size: 1rem;
+  }
+
+  .toast-message {
+    font-size: 0.85rem;
+  }
+
+  .toast-close {
+    font-size: 0.9rem;
+    padding: 2px;
+  }
+}

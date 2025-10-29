@@ -78,3 +78,92 @@
     color: #ffd700;
     font-weight: 600;
 }
+
+/* Responsive - Tablet */
+@media (max-width: 992px) and (min-width: 769px) {
+    .destination-card {
+        max-width: 100%;
+    }
+
+    .destination-name {
+        font-size: 1.25rem;
+    }
+
+    .destination-description {
+        font-size: 0.95rem;
+    }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+    .destination-card {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .destination-name {
+        font-size: 1.2rem;
+    }
+
+    .destination-location {
+        font-size: 0.85rem;
+    }
+
+    .destination-content {
+        padding: 1.25rem;
+    }
+
+    .destination-description {
+        font-size: 0.9rem;
+    }
+
+    /* Disable hover effect on mobile */
+    .destination-card:hover {
+        transform: none;
+    }
+
+    .destination-card:active {
+        transform: scale(0.98);
+    }
+
+    .destination-image:hover .destination-image-photo {
+        transform: none;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .destination-card {
+        margin: 0;
+    }
+
+    .destination-image,
+    .destination-image-photo,
+    .destination-image-fallback {
+        height: 180px;
+    }
+
+    .destination-image-fallback {
+        font-size: 2.5rem;
+    }
+
+    .destination-content {
+        padding: 1rem;
+    }
+
+    .destination-name {
+        font-size: 1.1rem;
+    }
+
+    .destination-location {
+        font-size: 0.8rem;
+    }
+
+    .destination-description {
+        font-size: 0.85rem;
+    }
+
+    .destination-rating {
+        font-size: 0.9rem;
+    }
+}

@@ -64,15 +64,64 @@
   }
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments - Tablet */
+@media (max-width: 992px) and (min-width: 769px) {
+  .carousel-track {
+    gap: 18px;
+  }
+
+  .carousel-item {
+    min-width: 280px;
+  }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
   .carousel-track {
     gap: 15px;
   }
+
+  .carousel-item {
+    min-width: 260px;
+  }
   
   .infinite-carousel-wrapper::before,
   .infinite-carousel-wrapper::after {
-    width: 50px;
+    width: 40px;
+  }
+
+  /* Slow down animation for better mobile viewing */
+  .carousel-track {
+    animation-duration: 35s;
+  }
+
+  /* Remove hover transform on mobile for better performance */
+  .carousel-item:hover {
+    transform: none;
+  }
+
+  .carousel-item:active {
+    transform: scale(0.98);
   }
 }
 
+/* Small Mobile */
+@media (max-width: 480px) {
+  .carousel-track {
+    gap: 12px;
+  }
+
+  .carousel-item {
+    min-width: 240px;
+  }
+
+  .infinite-carousel-wrapper::before,
+  .infinite-carousel-wrapper::after {
+    width: 30px;
+  }
+
+  /* Further slow down animation */
+  .carousel-track {
+    animation-duration: 40s;
+  }
+}

@@ -215,11 +215,16 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .bus-services-section {
-    padding: 60px 15px;
+    padding: 50px 15px;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
   }
 
   .section-title {
     font-size: 2rem;
+    gap: 10px;
   }
 
   .title-icon {
@@ -231,11 +236,101 @@
   }
 
   .bus-card {
-    width: 280px;
+    width: 260px;
   }
 
   .bus-card-image {
-    height: 180px;
+    height: 170px;
+  }
+
+  .bus-icon {
+    font-size: 3rem;
+  }
+
+  .bus-name {
+    font-size: 1.2rem;
+  }
+
+  .bus-description {
+    font-size: 0.9rem;
+  }
+
+  .bus-card-content {
+    padding: 16px;
+  }
+
+  /* Disable hover transforms on mobile */
+  .bus-card:hover {
+    transform: none !important;
+  }
+
+  .bus-card:active {
+    transform: scale(0.98) !important;
+  }
+
+  .amenity-tag:hover {
+    transform: none;
   }
 }
 
+@media (max-width: 480px) {
+  .bus-services-section {
+    padding: 40px 10px;
+  }
+
+  .section-header {
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .title-icon {
+    font-size: 2.2rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .bus-card {
+    width: 240px;
+  }
+
+  .bus-card-image {
+    height: 160px;
+  }
+
+  .bus-icon {
+    font-size: 2.5rem;
+  }
+
+  .bus-name {
+    font-size: 1.1rem;
+  }
+
+  .bus-capacity {
+    font-size: 0.85rem;
+  }
+
+  .bus-description {
+    font-size: 0.85rem;
+  }
+
+  .bus-price {
+    font-size: 0.9rem;
+    padding: 6px 14px;
+  }
+
+  .bus-card-content {
+    padding: 14px;
+  }
+
+  .amenity-tag {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+}
