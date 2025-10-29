@@ -1,0 +1,33 @@
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.App main {
+    flex: 1;
+}
+
+/* Main content area with sidebar spacing */
+.main-content {
+    padding-top: 70px;
+    margin-left: 270px;
+    transition: margin-left 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    flex: 1;
+}
+
+/* When sidebar is collapsed, adjust margin */
+.main-content.collapsed {
+    margin-left: 64px;
+}
+
+/* Mobile - no sidebar margin */
+@media (max-width: 992px) {
+    .main-content {
+        margin-left: 0;
+    }
+    
+    .main-content.collapsed {
+        margin-left: 0;
+    }
+}

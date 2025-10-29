@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "name": "Luxury AC Coaches",
+    "description": "Premium air-conditioned buses with reclining seats and entertainment systems",
+    "capacity": "40-45 seats",
+    "amenities": ["AC", "Reclining Seats", "Entertainment", "WiFi"],
+    "pricePerKm": 35,
+    "image": "🚌",
+    "imageUrl": "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=500"
+  },
+  {
+    "id": 2,
+    "name": "Semi-Sleeper Buses",
+    "description": "Comfortable semi-sleeper coaches perfect for long distance educational tours",
+    "capacity": "32-36 seats",
+    "amenities": ["AC", "Semi-Sleeper", "Reading Lights", "USB Charging"],
+    "pricePerKm": 40,
+    "image": "🚍",
+    "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=500"
+  },
+  {
+    "id": 3,
+    "name": "Mini Buses",
+    "description": "Compact buses ideal for smaller groups and city tours",
+    "capacity": "20-25 seats",
+    "amenities": ["AC", "Comfortable Seating", "Music System"],
+    "pricePerKm": 28,
+    "image": "🚐",
+    "imageUrl": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=500"
+  },
+  {
+    "id": 4,
+    "name": "Volvo Multi-Axle",
+    "description": "Premium Volvo coaches with superior comfort and safety features",
+    "capacity": "40-49 seats",
+    "amenities": ["Multi-Axle AC", "Pushback Seats", "Entertainment", "Pantry"],
+    "pricePerKm": 50,
+    "image": "🚌",
+    "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=500"
+  },
+  {
+    "id": 5,
+    "name": "School Buses",
+    "description": "Safe and reliable school buses with all safety certifications",
+    "capacity": "35-40 seats",
+    "amenities": ["GPS Tracking", "First Aid", "Fire Extinguisher", "CCTV"],
+    "pricePerKm": 25,
+    "image": "🚌",
+    "imageUrl": "https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=500"
+  },
+  {
+    "id": 6,
+    "name": "Tourist Tempo Travellers",
+    "description": "Perfect for small educational groups with flexible seating",
+    "capacity": "12-17 seats",
+    "amenities": ["AC", "Push Back Seats", "Music System", "LED TV"],
+    "pricePerKm": 22,
+    "image": "🚐",
+    "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500"
+  },
+  {
+    "id": 7,
+    "name": "Electric Buses",
+    "description": "Eco-friendly electric buses for sustainable educational tours",
+    "capacity": "30-35 seats",
+    "amenities": ["AC", "Zero Emission", "Silent Operation", "WiFi"],
+    "pricePerKm": 32,
+    "image": "🚌",
+    "imageUrl": "https://images.unsplash.com/photo-1570125909517-53cb21c89ff2?w=500"
+  },
+  {
+    "id": 8,
+    "name": "Double Decker Buses",
+    "description": "Unique double-decker experience for memorable city tours",
+    "capacity": "50-60 seats",
+    "amenities": ["Open Top Option", "AC Lower Deck", "Panoramic Views"],
+    "pricePerKm": 45,
+    "image": "🚌",
+    "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=500"
+  }
+]
+

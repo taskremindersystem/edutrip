@@ -1,0 +1,477 @@
+/* Modal Styles */
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    animation: fadeIn 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background: white;
+    padding: 0;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 900px;
+    max-height: 85vh;
+    overflow: hidden;
+    position: relative;
+    animation: slideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.close {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #6b7280;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close:hover {
+    background: #667eea;
+    color: white;
+    transform: rotate(90deg);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.trip-modal-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.trip-modal-header {
+    padding: 2.5rem 2.5rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    flex-shrink: 0;
+}
+
+.trip-modal-header .trip-category {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 1rem;
+}
+
+.trip-modal-header h2 {
+    color: white;
+    margin: 0.5rem 0 1rem;
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.trip-modal-header .trip-location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 1.5rem;
+}
+
+.trip-modal-header .trip-location i {
+    font-size: 1.1rem;
+}
+
+.trip-modal-details {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.trip-modal-details .trip-duration,
+.trip-modal-details .trip-price {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.trip-modal-details .trip-duration::before {
+    content: "⏱️";
+    font-size: 1.2rem;
+}
+
+.trip-modal-details .trip-price::before {
+    content: "💰";
+    font-size: 1.2rem;
+}
+
+.trip-modal-body {
+    padding: 2rem 2.5rem;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.trip-modal-body .trip-info {
+    max-width: 100%;
+}
+
+.trip-modal-body h3 {
+    color: #1f2937;
+    margin: 2rem 0 1rem 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.trip-modal-body h3::before {
+    content: "";
+    width: 4px;
+    height: 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 4px;
+}
+
+.trip-modal-body h3:first-of-type {
+    margin-top: 0;
+}
+
+.trip-modal-body p {
+    color: #4b5563;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.trip-details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+    margin: 1.5rem 0;
+}
+
+.detail-item {
+    background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+    padding: 1.2rem 1.5rem;
+    border-radius: 12px;
+    border: 2px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.detail-item:hover {
+    border-color: #667eea;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+    transform: translateY(-2px);
+}
+
+.detail-item strong {
+    color: #667eea;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.includes-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 12px;
+    margin: 1.5rem 0;
+}
+
+.includes-list li {
+    background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+    margin: 0;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border-left: 4px solid #10b981;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: #065f46;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.includes-list li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+}
+
+.includes-list li::before {
+    content: "✓";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: #10b981;
+    color: white;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+.itinerary {
+    background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+    border: 2px solid #e5e7eb;
+}
+
+.itinerary-item {
+    padding: 14px 0 14px 40px;
+    border-bottom: 1px solid #e5e7eb;
+    position: relative;
+    font-size: 0.95rem;
+    color: #4b5563;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+.itinerary-item:hover {
+    color: #667eea;
+    padding-left: 45px;
+}
+
+.itinerary-item:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itinerary-item:after {
+    content: "";
+    width: 2px;
+    height: calc(100% + 14px);
+    background: #e5e7eb;
+    position: absolute;
+    left: 9px;
+    top: 34px;
+}
+
+.itinerary-item:last-child {
+    border-bottom: none;
+}
+
+.itinerary-item:last-child:after {
+    display: none;
+}
+
+.trip-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 1.5rem 0;
+}
+
+.trip-features .feature-tag {
+    background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
+    color: #667eea;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid #c7d2fe;
+    transition: all 0.3s ease;
+}
+
+.trip-features .feature-tag:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.trip-modal-footer {
+    padding: 1.5rem 2.5rem 2rem;
+    border-top: 2px solid #f3f4f6;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-shrink: 0;
+    background: #fafafa;
+}
+
+.trip-modal-footer .btn {
+    padding: 14px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.trip-modal-footer .btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.trip-modal-footer .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+}
+
+.trip-modal-footer .btn-primary::before {
+    content: "🎟️";
+    font-size: 1.2rem;
+}
+
+.trip-modal-footer .btn-secondary {
+    background: white;
+    color: #6b7280;
+    border: 2px solid #e5e7eb;
+}
+
+.trip-modal-footer .btn-secondary:hover {
+    background: #f9fafb;
+    border-color: #667eea;
+    color: #667eea;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Custom Scrollbar */
+.trip-modal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.trip-modal-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.trip-modal-body::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+}
+
+.trip-modal-body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .modal {
+        padding: 10px;
+    }
+
+    .modal-content {
+        max-height: 90vh;
+        border-radius: 16px;
+    }
+
+    .trip-modal-header {
+        padding: 2rem 1.5rem 1.5rem;
+    }
+
+    .trip-modal-header h2 {
+        font-size: 1.6rem;
+    }
+
+    .trip-modal-body {
+        padding: 1.5rem;
+    }
+
+    .trip-modal-details {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .trip-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .includes-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .trip-modal-footer {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .trip-modal-footer .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .close {
+        right: 1rem;
+        top: 1rem;
+        width: 36px;
+        height: 36px;
+        font-size: 1.5rem;
+    }
+}

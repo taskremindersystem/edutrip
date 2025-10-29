@@ -1,0 +1,78 @@
+/* Infinite Carousel - Netflix Style */
+.infinite-carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+/* Gradient overlays for smooth fade effect */
+.infinite-carousel-wrapper::before,
+.infinite-carousel-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.infinite-carousel-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-color, #ffffff) 0%, transparent 100%);
+}
+
+.infinite-carousel-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-color, #ffffff) 0%, transparent 100%);
+}
+
+.infinite-carousel {
+  display: flex;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll var(--scroll-speed, 30s) linear infinite;
+  will-change: transform;
+}
+
+.infinite-carousel.paused .carousel-track {
+  animation-play-state: paused;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carousel-item:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 2));
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-track {
+    gap: 15px;
+  }
+  
+  .infinite-carousel-wrapper::before,
+  .infinite-carousel-wrapper::after {
+    width: 50px;
+  }
+}
+

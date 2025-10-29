@@ -1,0 +1,264 @@
+[
+  {
+    "id": 1,
+    "title": "Rajasthan Heritage Tour - Jaipur",
+    "category": "history",
+    "description": "Explore the Pink City's magnificent palaces, forts, and cultural heritage. Visit Amer Fort, City Palace, Hawa Mahal, and Jantar Mantar observatory.",
+    "duration": "3 Days",
+    "price": "₹2,500",
+    "features": ["Amer Fort", "City Palace", "Hawa Mahal", "Jantar Mantar", "Cultural Shows"],
+    "image": "fas fa-landmark",
+    "imageUrl": "https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "capacity": "40 students",
+    "ageGroup": "Class 6-12",
+    "includes": ["Transportation", "Accommodation", "All meals", "Entry tickets", "Guide"],
+    "itinerary": [
+      "Day 1: Arrival, City Palace, Jantar Mantar, Hawa Mahal",
+      "Day 2: Amer Fort, Jal Mahal, Albert Hall Museum",
+      "Day 3: Local markets, Cultural show, Departure"
+    ],
+    "highlights": [
+      "UNESCO World Heritage Sites",
+      "Traditional Rajasthani culture",
+      "Historical architecture"
+    ],
+    "state": "Rajasthan",
+    "city": "Jaipur"
+  },
+  {
+    "id": 2,
+    "title": "Uttarakhand Nature & Adventure Camp",
+    "category": "nature",
+    "description": "Experience the beauty of the Himalayas with trekking, wildlife spotting, and environmental education in Uttarakhand's pristine nature.",
+    "duration": "4 Days",
+    "price": "₹3,200",
+    "features": ["Trekking", "Wildlife Spotting", "River Rafting", "Camping", "Nature Education"],
+    "image": "fas fa-mountain",
+    "imageUrl": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "capacity": "30 students",
+    "ageGroup": "Class 8-12",
+    "includes": ["Camping equipment", "All meals", "Trekking guide", "Transportation", "Safety gear"],
+    "itinerary": [
+      "Day 1: Arrival, Nature walk, Orientation",
+      "Day 2: Trekking, Wildlife observation",
+      "Day 3: River rafting, Environmental workshop",
+      "Day 4: Local village visit, Departure"
+    ],
+    "highlights": [
+      "Himalayan landscapes",
+      "Wildlife conservation",
+      "Adventure activities"
+    ],
+    "state": "Uttarakhand",
+    "city": "Rishikesh"
+  },
+  {
+    "id": 3,
+    "title": "Kerala Backwaters & Culture",
+    "category": "culture",
+    "description": "Discover Kerala's unique backwaters, traditional art forms, and rich cultural heritage through houseboat rides and cultural performances.",
+    "duration": "3 Days",
+    "price": "₹2,800",
+    "features": ["Houseboat Ride", "Kathakali Show", "Spice Plantation", "Traditional Arts", "Ayurveda Workshop"],
+    "image": "fas fa-water",
+    "imageUrl": "https://images.unsplash.com/photo-1583417319078-cf7d8d9d8c9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "capacity": "35 students",
+    "ageGroup": "Class 5-10",
+    "includes": ["Houseboat accommodation", "All meals", "Cultural shows", "Transportation", "Guide"],
+    "itinerary": [
+      "Day 1: Arrival, Spice plantation tour, Local village visit",
+      "Day 2: Houseboat cruise, Kathakali performance",
+      "Day 3: Ayurveda workshop, Traditional crafts, Departure"
+    ],
+    "highlights": [
+      "UNESCO recognized backwaters",
+      "Traditional art forms",
+      "Unique ecosystem"
+    ],
+    "state": "Kerala",
+    "city": "Alleppey"
+  },
+  {
+    "id": 4,
+    "title": "Delhi Historical & Modern Tour",
+    "category": "history",
+    "description": "Explore India's capital with visits to Red Fort, Qutub Minar, India Gate, and modern attractions like Lotus Temple and Akshardham.",
+    "duration": "2 Days",
+    "price": "₹1,800",
+    "features": ["Red Fort", "Qutub Minar", "India Gate", "Lotus Temple", "Akshardham"],
+    "image": "fas fa-monument",
+    "imageUrl": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "capacity": "50 students",
+    "ageGroup": "Class 4-12",
+    "includes": ["Transportation", "Entry tickets", "Guide", "Lunch", "Educational materials"],
+    "itinerary": [
+      "Day 1: Red Fort, Jama Masjid, Raj Ghat, India Gate",
+      "Day 2: Qutub Minar, Lotus Temple, Akshardham Temple"
+    ],
+    "highlights": [
+      "UNESCO World Heritage Sites",
+      "Modern and ancient architecture",
+      "Rich historical significance"
+    ],
+    "state": "Delhi",
+    "city": "New Delhi"
+  },
+  {
+    "id": 5,
+    "title": "Tamil Nadu Temples & Culture",
+    "category": "culture",
+    "description": "Discover the architectural marvels of Tamil Nadu including Brihadeshwara Temple, Meenakshi Temple, and traditional South Indian culture.",
+    "duration": "3 Days",
+    "price": "₹2,200",
+    "features": ["Brihadeshwara Temple", "Meenakshi Temple", "Traditional Dance", "Temple Architecture", "Cultural Workshops"],
+    "image": "fas fa-temple",
+    "imageUrl": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "capacity": "40 students",
+    "ageGroup": "Class 6-12",
+    "includes": ["Transportation", "Accommodation", "All meals", "Entry tickets", "Cultural guide"],
+    "itinerary": [
+      "Day 1: Arrival, Brihadeshwara Temple, Tanjore Palace",
+      "Day 2: Meenakshi Temple, Madurai city tour",
+      "Day 3: Traditional dance workshop, Local crafts, Departure"
+    ],
+    "highlights": [
+      "UNESCO World Heritage Temples",
+      "Dravidian architecture",
+      "Traditional South Indian culture"
+    ],
+    "state": "Tamil Nadu",
+    "city": "Thanjavur"
+  },
+  {
+    "id": 6,
+    "title": "Gujarat Heritage & Wildlife",
+    "category": "nature",
+    "description": "Explore Gujarat's rich heritage including Rann of Kutch, Gir National Park, and ancient stepwells while learning about wildlife conservation.",
+    "duration": "4 Days",
+    "price": "₹3,500",
+    "features": ["Gir National Park", "Rann of Kutch", "Stepwells", "Wildlife Safari", "Cultural Villages"],
+    "image": "fas fa-lion",
+    "imageUrl": "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "capacity": "30 students",
+    "ageGroup": "Class 7-12",
+    "includes": ["Safari rides", "Accommodation", "All meals", "Wildlife guide", "Transportation"],
+    "itinerary": [
+      "Day 1: Arrival, Gir National Park safari",
+      "Day 2: Rann of Kutch, Salt desert exploration",
+      "Day 3: Ancient stepwells, Cultural villages",
+      "Day 4: Wildlife conservation workshop, Departure"
+    ],
+    "highlights": [
+      "Asiatic Lion habitat",
+      "Unique salt desert ecosystem",
+      "Ancient architectural marvels"
+    ],
+    "state": "Gujarat",
+    "city": "Ahmedabad"
+  },
+  {
+    "id": 7,
+    "title": "Himachal Pradesh Adventure & Nature",
+    "category": "nature",
+    "description": "Experience the beauty of Himachal Pradesh with trekking, river activities, and environmental education in the lap of the Himalayas.",
+    "duration": "5 Days",
+    "price": "₹4,000",
+    "features": ["Trekking", "River Activities", "Mountain Biking", "Environmental Education", "Local Culture"],
+    "image": "fas fa-mountain",
+    "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "capacity": "25 students",
+    "ageGroup": "Class 9-12",
+    "includes": ["Adventure equipment", "All meals", "Accommodation", "Expert guides", "Transportation"],
+    "itinerary": [
+      "Day 1: Arrival, Acclimatization, Local village visit",
+      "Day 2: Trekking expedition, Nature photography",
+      "Day 3: River activities, Environmental workshop",
+      "Day 4: Mountain biking, Local culture immersion",
+      "Day 5: Conservation activities, Departure"
+    ],
+    "highlights": [
+      "Himalayan trekking",
+      "Adventure sports",
+      "Environmental conservation"
+    ],
+    "state": "Himachal Pradesh",
+    "city": "Manali"
+  },
+  {
+    "id": 8,
+    "title": "Karnataka Science & Technology",
+    "category": "science",
+    "description": "Explore India's Silicon Valley with visits to science museums, tech parks, and educational institutions showcasing India's technological advancement.",
+    "duration": "2 Days",
+    "price": "₹1,500",
+    "features": ["Science Museums", "Tech Parks", "Innovation Centers", "Educational Labs", "Technology Workshops"],
+    "image": "fas fa-microchip",
+    "imageUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "capacity": "45 students",
+    "ageGroup": "Class 8-12",
+    "includes": ["Transportation", "Entry tickets", "Workshop materials", "Lunch", "Tech guide"],
+    "itinerary": [
+      "Day 1: Visvesvaraya Industrial Museum, ISRO center",
+      "Day 2: Tech park visits, Innovation workshop, Science lab"
+    ],
+    "highlights": [
+      "India's tech hub",
+      "Space technology",
+      "Innovation and entrepreneurship"
+    ],
+    "state": "Karnataka",
+    "city": "Bangalore"
+  },
+  {
+    "id": 9,
+    "title": "Maharashtra Forts & Caves",
+    "category": "history",
+    "description": "Discover Maharashtra's rich history through visits to ancient forts, Ajanta-Ellora caves, and historical monuments showcasing Maratha heritage.",
+    "duration": "3 Days",
+    "price": "₹2,000",
+    "features": ["Ajanta Caves", "Ellora Caves", "Raigad Fort", "Shivaji Maharaj Museum", "Cultural Heritage"],
+    "image": "fas fa-mountain",
+    "imageUrl": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "capacity": "40 students",
+    "ageGroup": "Class 6-12",
+    "includes": ["Transportation", "Accommodation", "All meals", "Entry tickets", "Historical guide"],
+    "itinerary": [
+      "Day 1: Arrival, Ajanta Caves exploration",
+      "Day 2: Ellora Caves, Aurangabad city tour",
+      "Day 3: Raigad Fort, Shivaji Maharaj Museum, Departure"
+    ],
+    "highlights": [
+      "UNESCO World Heritage Caves",
+      "Maratha Empire history",
+      "Ancient rock-cut architecture"
+    ],
+    "state": "Maharashtra",
+    "city": "Aurangabad"
+  },
+  {
+    "id": 10,
+    "title": "West Bengal Culture & Literature",
+    "category": "culture",
+    "description": "Immerse in Bengal's rich cultural heritage, literature, and arts through visits to museums, cultural centers, and traditional workshops.",
+    "duration": "3 Days",
+    "price": "₹2,300",
+    "features": ["Victoria Memorial", "Indian Museum", "Tagore House", "Traditional Arts", "Literature Workshop"],
+    "image": "fas fa-book",
+    "imageUrl": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "capacity": "35 students",
+    "ageGroup": "Class 7-12",
+    "includes": ["Transportation", "Accommodation", "All meals", "Entry tickets", "Cultural guide"],
+    "itinerary": [
+      "Day 1: Arrival, Victoria Memorial, Indian Museum",
+      "Day 2: Tagore House, Literature workshop",
+      "Day 3: Traditional arts workshop, Local culture, Departure"
+    ],
+    "highlights": [
+      "Bengali literature and culture",
+      "Historical monuments",
+      "Traditional art forms"
+    ],
+    "state": "West Bengal",
+    "city": "Kolkata"
+  }
+]

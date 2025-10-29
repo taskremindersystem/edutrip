@@ -1,0 +1,248 @@
+/* Left Sidebar - Professional Miro-inspired Design */
+:root {
+  --sidebar-width: 270px;
+  --sidebar-width-collapsed: 64px;
+  --header-height: 70px;
+  --primary-color: #667eea;
+  --hover-bg: rgba(102, 126, 234, 0.08);
+  --active-bg: rgba(102, 126, 234, 0.12);
+  --border-color: rgba(0, 0, 0, 0.06);
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+}
+
+.sidebar {
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  height: calc(100vh - var(--header-height));
+  width: var(--sidebar-width);
+  background: #ffffff;
+  border-right: 1px solid var(--border-color);
+  z-index: 900;
+  transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sidebar.collapsed {
+  width: var(--sidebar-width-collapsed);
+}
+
+.sidebar-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Collapse Button */
+.collapse-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 20px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.collapse-btn:hover {
+  background: var(--hover-bg);
+  color: var(--primary-color);
+}
+
+.collapse-icon {
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* Navigation */
+.side-nav {
+  padding: 12px 8px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex: 1;
+}
+
+/* Scrollbar styling */
+.side-nav::-webkit-scrollbar {
+  width: 6px;
+}
+
+.side-nav::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.side-nav::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.side-nav::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Group */
+.nav-group {
+  margin-bottom: 8px;
+}
+
+/* Navigation Item */
+.nav-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  font-weight: 500;
+  min-height: 40px;
+  white-space: nowrap;
+}
+
+.nav-item i {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.nav-item:hover {
+  background: var(--hover-bg);
+  color: var(--text-primary);
+}
+
+.nav-group.active > .nav-item {
+  background: var(--active-bg);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Label */
+.label {
+  flex: 1;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Collapsed state - hide labels */
+.sidebar.collapsed .label,
+.sidebar.collapsed .sub-label {
+  display: none;
+}
+
+/* Collapsed state - center icons */
+.sidebar.collapsed .nav-item {
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Sublist for nested items */
+.nav-sublist {
+  margin: 4px 0 4px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Sub-item */
+.nav-subitem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px 8px;
+  color: var(--text-secondary);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  transition: all 0.2s ease;
+  min-height: 32px;
+  white-space: nowrap;
+}
+
+.nav-subitem:hover {
+  background: var(--hover-bg);
+  color: var(--primary-color);
+}
+
+/* Dot indicator */
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  flex-shrink: 0;
+}
+
+/* Sub-label */
+.sub-label {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Sidebar Overlay for Mobile */
+.sidebar-overlay {
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 899;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+  pointer-events: none;
+}
+
+.sidebar-overlay.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Professional spacing and layout */
+@media (min-width: 993px) {
+  .sidebar {
+    display: flex;
+  }
+  
+  .sidebar-overlay {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    transform: translateX(0);
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar.collapsed {
+    transform: translateX(-100%);
+  }
+}

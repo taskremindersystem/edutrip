@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "name": "Hotel Bookings",
+    "description": "Comfortable accommodations near educational sites and tourist attractions",
+    "icon": "🏨",
+    "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500",
+    "features": ["Budget to 5-Star", "Group Discounts", "Safe & Clean"]
+  },
+  {
+    "id": 2,
+    "name": "Tour Guides",
+    "description": "Expert local guides with deep knowledge of history and culture",
+    "icon": "👨‍🏫",
+    "imageUrl": "https://images.unsplash.com/photo-1531498681029-e7a00e6537ae?w=500",
+    "features": ["Multilingual", "Certified", "Experienced"]
+  },
+  {
+    "id": 3,
+    "name": "Meal Arrangements",
+    "description": "Hygienic and nutritious meals planned for student groups",
+    "icon": "🍽️",
+    "imageUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500",
+    "features": ["Vegetarian Options", "Hygienic", "Customizable Menu"]
+  },
+  {
+    "id": 4,
+    "name": "Museum & Monument Tickets",
+    "description": "Pre-booked entry tickets to avoid queues at popular attractions",
+    "icon": "🎫",
+    "imageUrl": "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=500",
+    "features": ["Skip the Line", "Group Rates", "Educational Discounts"]
+  },
+  {
+    "id": 5,
+    "name": "Travel Insurance",
+    "description": "Comprehensive insurance coverage for safe and secure trips",
+    "icon": "🛡️",
+    "imageUrl": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=500",
+    "features": ["Medical Coverage", "Trip Cancellation", "24/7 Support"]
+  },
+  {
+    "id": 6,
+    "name": "Photography Services",
+    "description": "Professional photography to capture memorable educational moments",
+    "icon": "📸",
+    "imageUrl": "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=500",
+    "features": ["Group Photos", "Video Coverage", "Digital Album"]
+  },
+  {
+    "id": 7,
+    "name": "Educational Workshops",
+    "description": "Hands-on workshops and interactive learning sessions",
+    "icon": "🔬",
+    "imageUrl": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=500",
+    "features": ["STEM Activities", "Cultural Workshops", "Expert Trainers"]
+  },
+  {
+    "id": 8,
+    "name": "Emergency Support",
+    "description": "24/7 emergency assistance and medical support during trips",
+    "icon": "🚑",
+    "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=500",
+    "features": ["24/7 Helpline", "Medical Team", "Emergency Evacuation"]
+  },
+  {
+    "id": 9,
+    "name": "Custom Itineraries",
+    "description": "Tailored trip plans based on educational goals and preferences",
+    "icon": "📋",
+    "imageUrl": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=500",
+    "features": ["Personalized", "Flexible", "Expert Planning"]
+  },
+  {
+    "id": 10,
+    "name": "Activity Coordination",
+    "description": "Adventure activities and team building exercises for students",
+    "icon": "🎯",
+    "imageUrl": "https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=500",
+    "features": ["Team Building", "Adventure Sports", "Safety Certified"]
+  }
+]
+
